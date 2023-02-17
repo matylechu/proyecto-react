@@ -15,16 +15,16 @@ const NavBar = () => {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                <NavLink className="nav-link active" activeClassname={"active"} to={"/"}>Botines</NavLink>
+                                <NavLink className="nav-link active" activeclassname={"active"} to={"/"}>Botines</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                <NavLink className="nav-link" activeClassname={"active"} to={"/category/firme"}>Terreno firme</NavLink>
+                                <NavLink className="nav-link" activeclassname={"active"} to={"/category/firme"}>Terreno firme</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                <NavLink className="nav-link" activeClassname={"active"} to={"/category/futsal"}>Futsal</NavLink>
+                                <NavLink className="nav-link" activeclassname={"active"} to={"/category/futsal"}>Futsal</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                <NavLink className="nav-link" activeClassname={"active"} to={"/category/sintetico"}>Terreno Sintetico</NavLink>
+                                <NavLink className="nav-link" activeclassname={"active"} to={"/category/sintetico"}>Terreno Sintetico</NavLink>
                                 </li>
                             </ul>
                         </div>
