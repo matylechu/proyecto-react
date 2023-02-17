@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget";
+import { Link, NavLink } from "react-router-dom";
 import logo from "./img/logo-tienda.png";
 const NavBar = () => {
     return(
@@ -7,23 +8,23 @@ const NavBar = () => {
                 <div className="col">
 <nav className="navbar navbar-expand-lg">
                   <div className="container-fluid">
-                  <a className="navbar-brand" href={"/"}><img src={logo} alt="logo" width={"108"}/> </a>
+                  <Link className="navbar-brand" to={"/"}><img src={logo} alt="logo" width={"108"}/> </Link>
                       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                       </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href={"/"}>Botines</a>
+                                <NavLink className="nav-link active" activeClassname={"active"} to={"/"}>Botines</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                <a className="nav-link" href={"/11"}>Terreno firme</a>
+                                <NavLink className="nav-link" activeClassname={"active"} to={"/category/firme"}>Terreno firme</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                <a className="nav-link" href={"/futsal"}>Futsal</a>
+                                <NavLink className="nav-link" activeClassname={"active"} to={"/category/futsal"}>Futsal</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                <a className="nav-link" href={"/sintetico"}>Terreno Sintetico</a>
+                                <NavLink className="nav-link" activeClassname={"active"} to={"/category/sintetico"}>Terreno Sintetico</NavLink>
                                 </li>
                             </ul>
                         </div>
