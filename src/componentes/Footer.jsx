@@ -6,9 +6,9 @@ const Footer = () => {
         <div className="container my-5">
             <div className="row">
                 <div className="col">
-                    <a href={"/"} className="ms-3"> <img src={insta} alt="insta" width={"24"}/> </a>
+                    <a href={"/"} className="ms-3 text-decoration-none"> <img src={insta} alt="insta" width={"24"}/> </a>
                     <img src={code} alt="code" width={"24"} className="ms-3"/> Matias Lechuga
-                    <a href={"/"} className="ms-3"> <img src={github} alt="github" width={"24"} /></a>
+                    <a href={"/"} className="ms-3 text-decoration-none"> <img src={github} alt="github" width={"24"} /></a>
                 </div>
             </div>
             <hr />
